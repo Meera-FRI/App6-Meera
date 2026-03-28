@@ -7,7 +7,7 @@ THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.
  
 Authors in chronological order of contribution:
 Tim Riedel
-Author 2
+Meera Menon
  
 Further Information:
 http://cns.utexas.edu/fri
@@ -17,10 +17,10 @@ Timothy Riedel
 triedel@utexas.edu
  
 Brief Description of Goal of Code:
-blah, blah, blah,
+Make a canvas that I can draw a rectangle, my name, an image, and a clear button
  
 Known Issues:
-blah, blah, blah, blah
+Creating images and coding buttons that make things pop up.
 https://www.w3schools.com/w3css/default.asp
 https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-file
 -->
@@ -91,21 +91,21 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 
       function drawRect() {
         ctx.fillRect(20, 20, 150, 100);
-      } // This makes the rectangle
+      } <!-- This makes the rectangle -->
 
       function drawText() {
         ctx.font = "30px Arial";
         ctx.fillText("Meera", 50, 200);
-      } // This makes the text
+      } <!-- This makes the text -->
 
       function drawImg() {
         var img = document.getElementById("scream");
         ctx.drawImage(img, 200, 20, 100, 120);
-      } // This makes the image
+      } <!-- This makes the image from W3Schools come up called scream -->
 
       function clearCanvas() {
         ctx.clearRect(0, 0, c.width, c.height);
-      } // This makes the screen cleared from the image etc
+      } <!-- This makes the screen cleared from the image etc -->
     </script>
   </div>
 
