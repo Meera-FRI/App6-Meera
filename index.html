@@ -73,6 +73,41 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 	<p>The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at 		Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code 			does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
  	
 	<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p>
+	<canvas id="myCanvas" width="400" height="250" style="border:1px solid #000000;">
+    </canvas>
+
+    <br><br>
+
+    <button onclick="drawRect()">Draw Rectangle</button> // This creates a button that make the rectangle
+    <button onclick="drawText()">Draw Name</button> // This creates a button that make my name come up
+    <button onclick="drawImg()">Load Image</button> This creates a button that grabs the hidden image from my HTML to put on te canvas
+    <button onclick="clearCanvas()">Clear Canvas</button> This creates a button to clear the canvas
+
+    <img id="scream" src="https://www.w3schools.com/html/img_the_scream.jpg" alt="The Scream" width="220" height="277" style="display:none;">
+
+    <script>
+      var c = document.getElementById("myCanvas");
+      var ctx = c.getContext("2d");
+
+      function drawRect() {
+        ctx.fillRect(20, 20, 150, 100);
+      } // This makes the rectangle
+
+      function drawText() {
+        ctx.font = "30px Arial";
+        ctx.fillText("Meera", 50, 200);
+      } // This makes the text
+
+      function drawImg() {
+        var img = document.getElementById("scream");
+        ctx.drawImage(img, 200, 20, 100, 120);
+      } // This makes the image
+
+      function clearCanvas() {
+        ctx.clearRect(0, 0, c.width, c.height);
+      } // This makes the screen cleared from the image etc
+    </script>
+  </div>
 
 <footer class="w3-bottom w3-container w3-flat-carrot">
 	<p>DIY!</p>
